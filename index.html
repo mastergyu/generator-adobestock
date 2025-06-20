@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Riset Trend Adobe Stock</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-8 md:mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400">Generator Riset Trend Adobe Stock</h1>
+            <p class="text-sm mt-2 font-bold text-gray-900 dark:text-white">by mastergyu</p>
+            <p class="mt-1 text-lg text-gray-600 dark:text-gray-400">Dapatkan Analisis Tren Komersial, Prediksi, dan Prompt Berkualitas</p>
+        </header>
+        <main class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <aside class="lg:col-span-1 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+                <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-700">1. Alat Analisis</h2>
+                <h3 class="font-semibold text-gray-700 dark:text-gray-300">Dapatkan Tren Komersial</h3>
+                <button id="fetch-trends-btn" class="w-full mt-2 px-4 py-3 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition duration-300 shadow-lg">Tren Komersial Minggu Ini</button>
+                <div id="keywords-container" class="flex flex-wrap gap-3 mt-4"></div>
+                <div class="mt-8">
+                    <h3 class="font-semibold text-gray-700 dark:text-gray-300">Prediksi Tren Masa Depan</h3>
+                    <button id="fetch-future-trends-btn" class="w-full mt-2 px-4 py-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-700 transition duration-300 shadow-lg">Prediksi Viral Minggu Depan</button>
+                    <div id="future-keywords-container" class="flex flex-wrap gap-3 mt-4"></div>
+                </div>
+                <div class="mt-8">
+                    <h3 class="font-semibold text-gray-700 dark:text-gray-300">Atau, Analisis Keyword Anda</h3>
+                    <input type="text" id="custom-keyword-input" class="w-full mt-2 p-3 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg" placeholder="contoh: sport atlet individu">
+                    <button id="analyze-custom-btn" class="w-full mt-3 px-4 py-3 bg-teal-600 text-white font-bold rounded-lg hover:bg-teal-700 transition duration-300">Analisis Keyword Ini</button>
+                </div>
+            </aside>
+            <section id="results" class="lg:col-span-2 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg min-h-[400px]">
+                <h2 class="text-xl font-semibold mb-4">2. Analisis & Hasil Prompt</h2>
+                <div id="content-container" class="space-y-4">
+                    <div class="text-center py-16">
+                        <svg class="mx-auto h-12 w-12 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
+                        </svg>
+                        <h3 class="mt-2 text-lg font-medium text-gray-900 dark:text-white">Analisis keyword akan muncul di sini</h3>
+                        <p class="mt-1 text-gray-500 dark:text-gray-400">Pilih salah satu alat analisis di samping.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="text-center mt-12 text-gray-500 dark:text-gray-400 text-sm"></footer>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
